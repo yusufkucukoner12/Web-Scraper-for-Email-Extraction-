@@ -65,7 +65,7 @@ def url_parser(url, base_url):
     base_url = base_url.split('/')[1:]
     url = url.split('/')
     a = 0
-    b = 0    
+    b = 0   
     url = list(filter(lambda a: a != '', url))
     base_url = list(filter(lambda a: a != '', base_url))
 
@@ -223,5 +223,3 @@ def run_and_get_email(url):
     driver.quit()
 
     return 'Not found', url
-
-print(run_and_get_email('http://www.yildirimelektronik.com'))
